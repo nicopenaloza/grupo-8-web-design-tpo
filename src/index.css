@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-bg: #fff9e1;
+  --color-surface: #ffffff;
+  --color-primary: #5f4633;
+  --color-secondary: #4a3628;
+  --color-accent: #8b6f47;
+  --color-muted: #c7b69f;
+  --color-text: #5f4633;
+  --color-text-muted: #7a6b5a;
+  --color-border: #c7b69f;
+  --shadow-elevated: 0 18px 30px -22px rgba(95, 70, 51, 0.25);
+  --radius-base: 0.75rem;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-bg: #2a2419;
+  --color-surface: #3a3228;
+  --color-primary: #c7b69f;
+  --color-secondary: #d4c4b0;
+  --color-accent: #8b6f47;
+  --color-muted: #4a3f32;
+  --color-text: #fff9e1;
+  --color-text-muted: #c7b69f;
+  --color-border: #5a4d3f;
+  --shadow-elevated: 0 18px 30px -22px rgba(0, 0, 0, 0.5);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-text antialiased min-h-screen;
+  }
+
+  a {
+    @apply text-primary transition-colors duration-200 hover:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary focus-visible:ring-offset-background;
+  }
+
+  button {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary focus-visible:ring-offset-background;
+  }
+}
