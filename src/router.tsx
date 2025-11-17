@@ -14,21 +14,16 @@ export const navigation = [
 	{ name: "Contacto", href: "/contacto" },
 ];
 
-export const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <MainLayout />,
-      children: [
-        { index: true, element: <Home /> },
-        { path: "servicios", element: <Servicios /> },
-        { path: "locales", element: <Locales /> },
-        { path: "eventos", element: <Eventos /> },
-        { path: "contacto", element: <Contacto /> },
-      ],
-    },
-  ],
+export const router = createBrowserRouter([
   {
-    basename: "/grupo-8-web-design-tpo",
-  }
-);
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "servicios", element: <Servicios /> },
+      { path: "locales", element: <Locales /> },
+      { path: "eventos", element: <Eventos /> },
+      { path: "contacto", element: <Contacto /> },
+    ],
+  },
+]);

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nicopenaloza.github.io/grupo-8-web-design-tpo/",
+  "homepage": "https://galeriaurbana.me/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
