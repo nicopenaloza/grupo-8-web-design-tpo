@@ -147,7 +147,7 @@ const Carousel: FC<CarouselProps> = ({
                     {promotion.url && (
                       <a
                         href={promotion.url}
-                        className="mt-4 inline-block rounded-full bg-primary px-6 py-2 text-sm font-semibold text-white transition hover:bg-white hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+                        className="mt-4 max-md:hidden inline-block rounded-full bg-primary px-6 py-2 text-sm font-semibold text-white transition hover:bg-white hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
                       >
                         Ver más
                       </a>
@@ -164,7 +164,7 @@ const Carousel: FC<CarouselProps> = ({
         type="button"
         onClick={scrollPrev}
         disabled={!canScrollPrev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 text-text shadow-lg transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 max-md:hidden text-text shadow-lg transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 disabled:opacity-50 disabled:cursor-not-allowed"
         aria-label="Slide anterior"
         >
         <ChevronLeftIcon className="h-6 w-6" aria-hidden />
@@ -174,7 +174,7 @@ const Carousel: FC<CarouselProps> = ({
         type="button"
         onClick={scrollNext}
         disabled={!canScrollNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 text-text shadow-lg transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/90 max-md:hidden p-2 text-text shadow-lg transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 disabled:opacity-50 disabled:cursor-not-allowed"
         aria-label="Slide siguiente"
       >
         <ChevronRightIcon className="h-6 w-6" aria-hidden />
