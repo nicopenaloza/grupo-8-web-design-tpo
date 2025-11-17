@@ -29,7 +29,7 @@ const Eventos = () => {
       VERSION:2.0
       PRODID:-//Galería Urbana//Eventos//ES
       BEGIN:VEVENT
-      UID:${event.id}@galeriaurbana.com
+      UID:${event.id}@galeriaurbana.me
       DTSTAMP:${dayjs().format("YYYYMMDDTHHmmss")}
       DTSTART:${start}
       DTEND:${end}

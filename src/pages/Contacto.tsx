@@ -141,10 +141,10 @@ const Contacto = () => {
                 Email
               </h3>
               <a
-                href="mailto:info@galeriaurbana.com"
+                href="mailto:info@galeriaurbana.me"
                 className="text-text transition-colors hover:text-primary"
               >
-                info@galeriaurbana.com
+                info@galeriaurbana.me
               </a>
             </div>
             <div>

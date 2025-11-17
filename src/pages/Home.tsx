@@ -184,10 +184,10 @@ const Home = () => {
                   </a>
                   <br />
                   <a
-                    href="mailto:info@galeriaurbana.com"
+                    href="mailto:info@galeriaurbana.me"
                     className="transition-colors hover:text-primary"
                   >
-                    info@galeriaurbana.com
+                    info@galeriaurbana.me
                   </a>
                 </p>
               </div>
